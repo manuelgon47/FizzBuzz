@@ -14,6 +14,7 @@
 		1850738B1C97036C00DC67E2 /* FizzBuzz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185073891C97036C00DC67E2 /* FizzBuzz.xcdatamodeld */; };
 		1850738D1C97036C00DC67E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1850738C1C97036C00DC67E2 /* Assets.xcassets */; };
 		185073901C97036C00DC67E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1850738E1C97036C00DC67E2 /* LaunchScreen.storyboard */; };
+		1850739A1C9707C800DC67E2 /* FizzBuzzDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 185073991C9707C800DC67E2 /* FizzBuzzDto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		1850738C1C97036C00DC67E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1850738F1C97036C00DC67E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		185073911C97036C00DC67E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185073981C9707C800DC67E2 /* FizzBuzzDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FizzBuzzDto.h; path = Dto/FizzBuzzDto.h; sourceTree = "<group>"; };
+		185073991C9707C800DC67E2 /* FizzBuzzDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FizzBuzzDto.m; path = Dto/FizzBuzzDto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 		1850737C1C97036B00DC67E2 /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
+				185073971C97078500DC67E2 /* Dto */,
 				185073801C97036B00DC67E2 /* AppDelegate.h */,
 				185073811C97036B00DC67E2 /* AppDelegate.m */,
 				185073831C97036B00DC67E2 /* ViewController.h */,
@@ -80,6 +84,15 @@
 				1850737E1C97036B00DC67E2 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		185073971C97078500DC67E2 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+				185073981C9707C800DC67E2 /* FizzBuzzDto.h */,
+				185073991C9707C800DC67E2 /* FizzBuzzDto.m */,
+			);
+			name = Dto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1850739A1C9707C800DC67E2 /* FizzBuzzDto.m in Sources */,
 				185073851C97036B00DC67E2 /* ViewController.m in Sources */,
 				185073821C97036B00DC67E2 /* AppDelegate.m in Sources */,
 				1850737F1C97036B00DC67E2 /* main.m in Sources */,
@@ -267,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FizzBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.businessdecision.FizzBuzz;
@@ -278,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FizzBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.businessdecision.FizzBuzz;
@@ -304,6 +320,7 @@
 				185073961C97036C00DC67E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

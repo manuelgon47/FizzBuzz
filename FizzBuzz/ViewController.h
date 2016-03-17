@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FizzBuzzDto.h"
 
 @interface ViewController : UIViewController
 
+@property NSMutableArray<FizzBuzzDto *> *list;
+@property (weak, nonatomic) IBOutlet UILabel *result;
+@property (weak, nonatomic) IBOutlet UITextField *inputNumber;
 
 @end
 
